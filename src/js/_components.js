@@ -1,1 +1,1 @@
-console.log('components');
+import "./components/custom-select.js";

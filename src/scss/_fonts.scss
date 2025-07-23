@@ -1,1 +1,6 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@use "./mixins/font-face" as *;
+
+@include font-face("Roboto", "../fonts/Roboto-Regular", 400, normal);
+@include font-face("Roboto", "../fonts/Roboto-Medium", 500, normal);
+@include font-face("Roboto", "../fonts/Roboto-SemiBold", 600, normal);
+@include font-face("Roboto", "../fonts/Roboto-Bold", 700, normal);

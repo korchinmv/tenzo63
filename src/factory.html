@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  @include('partials/header.html')
+  <main class="main">
+    <div class="factory">
+      <div class="container">
+        <div class="factory__head">
+          <h1 class="factory__title page-title">Бетонные заводы</h1>
+
+          <p class="factory__head-text">Компания «Тензоприбор» предлагает бетонные заводы собственного производства,
+            спроектированные с учётом российских условий эксплуатации. Благодаря собственному производству мы
+            контролируем каждый этап сборки — от выбора комплектующих до итоговой сборки и наладки. Это позволяет
+            гарантировать высокое качество, долговечность и соответствие техническим стандартам.</p>
+
+          <div class="factory__selects">
+            <div class="factory__select custom-select">
+              <div class="custom-select__header" tabindex="0">
+                <span class="custom-select__current">Производительность</span>
+                <svg class="custom-select__arrow" width="12" height="6" viewBox="0 0 12 6" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.582 1.22462L6.82891 5.78989C6.53723 6.07004 6.06433 6.07004 5.77266 5.78989L1.01954 1.22462C0.727862 0.944468 0.727862 0.490259 1.01954 0.210111C1.31121 -0.070037 1.78411 -0.070037 2.07579 0.210111L6.30078 4.26813L10.5258 0.210111C10.8175 -0.070037 11.2903 -0.070037 11.582 0.210111C11.8737 0.490259 11.8737 0.944468 11.582 1.22462Z"
+                    fill="#6D6D6D" />
+                </svg>
+              </div>
+
+              <div class="custom-select__dropdown">
+                <ul class="custom-select__list">
+                  <li class="custom-select__list-item">
+                    <div class="custom-select__checkbox">
+                      <label class="form__checkbox custom-checkbox">
+                        <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                          data-validate-field="checkbox">
+
+                        <span class="custom-checkbox__span"></span>
+                      </label>
+
+                      <span class="custom-select__checkbox-text">Пункт 1</span>
+                    </div>
+                  </li>
+                  <li class="custom-select__list-item">
+                    <div class="custom-select__checkbox">
+                      <label class="form__checkbox custom-checkbox">
+                        <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                          data-validate-field="checkbox">
+
+                        <span class="custom-checkbox__span"></span>
+                      </label>
+
+                      <span class="custom-select__checkbox-text">Пункт 2</span>
+                    </div>
+                  </li>
+                  <li class="custom-select__list-item">
+                    <div class="custom-select__checkbox">
+                      <label class="form__checkbox custom-checkbox">
+                        <input class="custom-checkbox__input input-checkbox visually-hidden" type="checkbox"
+                          data-validate-field="checkbox">
+
+                        <span class="custom-checkbox__span"></span>
+                      </label>
+
+                      <span class="custom-select__checkbox-text">Пункт 3</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </main>
+  @include('partials/footer.html')
+</body>
+
+</html>

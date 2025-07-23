@@ -1,16 +1,10 @@
-// базовые подключения
 @use "vars";
 @use "mixins";
 @use "fonts";
 @use "settings";
 
-// подключения компонентов страницы
+
 @use "./components/header";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+@use "./pages/factory";
+@use "./ui/custom-select";

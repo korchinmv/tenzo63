@@ -52,6 +52,7 @@ input {
 
 main {
   flex-grow: 1;
+  width: 100%;
 }
 
 img {
@@ -87,4 +88,10 @@ button {
   width: 1px;
   height: 1px;
   clip: rect(0 0 0 0);
+}
+
+.page-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2;
 }
