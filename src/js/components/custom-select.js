@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   customSelects.forEach((select) => {
     const header = select.querySelector(".custom-select__header");
+    const options = select.querySelectorAll(".custom-select__list-item");
+    const selectBtn = select.querySelector(".custom-select__current");
+    const resetBtn = select.querySelector(".custom-select__reset");
 
     // Открытие/закрытие dropdown
     function toggleDropdown() {
@@ -30,5 +33,35 @@ document.addEventListener("DOMContentLoaded", function () {
         select.classList.remove("custom-select--active");
       }
     });
+
+    if (options) {
+      options.forEach((option) => {
+        option.addEventListener("click", () => {
+          selectBtn.innerText = option.innerText;
+          select.classList.remove("custom-select--active");
+
+          if (option.classList.contains("custom-select__list-item--active")) {
+            option.classList.remove("custom-select__list-item--active");
+            resetBtn.style.display = "none";
+          } else {
+            options.forEach((item) => {
+              item.classList.remove("custom-select__list-item--active");
+            });
+            option.classList.add("custom-select__list-item--active");
+            resetBtn.style.display = "flex";
+          }
+        });
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        options.forEach((item) => {
+          item.classList.remove("custom-select__list-item--active");
+        });
+        selectBtn.innerText = "Выберите значение";
+        resetBtn.style.display = "none";
+      });
+    }
   });
 });

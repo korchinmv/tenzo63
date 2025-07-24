@@ -1,0 +1,14 @@
+ .specs {
+   &__item {
+     display: flex;
+     justify-content: space-between;
+     padding: 8px 0;
+     font-size: 16px;
+   }
+
+   &__dotted-line {
+     flex-grow: 1;
+     border-bottom: 1px dashed #e4e4e4;
+     height: 1em;
+   }
+ }
