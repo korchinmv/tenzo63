@@ -8,6 +8,10 @@
 
 @use "./pages/factory";
 
+@use "./sections/application-block";
+
 @use "./ui/custom-select";
+@use "./ui/button-transparent";
+@use "./ui/button-green";
 
 @use "./elements/specs";

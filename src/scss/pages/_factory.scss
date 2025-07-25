@@ -64,6 +64,8 @@
   &__list-item-left {
     max-width: 306px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   &__list-item-title {
@@ -85,6 +87,7 @@
   &__list-item-btns {
     display: flex;
     column-gap: 10px;
+    margin-top: auto;
   }
 
   &__list-item-middle {
@@ -98,5 +101,13 @@
     line-height: 1.4;
     color: rgba(51, 51, 51, 0.6);
     margin-bottom: 80px;
+  }
+
+  &__list-item-img {
+    max-width: 306px;
+  }
+
+  &__application-block {
+    background-color: #f4f4f4;
   }
 }
