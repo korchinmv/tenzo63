@@ -95,3 +95,19 @@ button {
   font-size: 32px;
   line-height: 1.2;
 }
+
+.text {
+  p {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    margin-bottom: 10px;
+
+    li {
+      margin-left: 20px;
+      list-style-type: disc;
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -110,4 +110,41 @@
   &__application-block {
     background-color: #f4f4f4;
   }
+
+  &__questions {
+    padding: 80px 0;
+
+    @media screen and (width <=768px) {
+      padding: 60px 0;
+    }
+  }
+
+  &__questions-title {
+    margin-bottom: 50px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__geograpy {
+    padding: 80px 0 120px 0;
+
+    @media screen and (width <=768px) {
+      padding: 60px 0;
+    }
+  }
+
+  &__geograpy-title {
+    margin-bottom: 16px;
+
+    @media screen and (width <=768px) {
+      margin-bottom: 24px;
+
+    }
+  }
+
+  &__geograpy-text {
+    margin-bottom: 24px;
+  }
 }
