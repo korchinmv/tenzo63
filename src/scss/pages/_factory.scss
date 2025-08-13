@@ -131,7 +131,7 @@
     padding: 80px 0 120px 0;
 
     @media screen and (width <=768px) {
-      padding: 60px 0;
+      padding: 0 0 60px 0;
     }
   }
 
@@ -140,11 +140,44 @@
 
     @media screen and (width <=768px) {
       margin-bottom: 24px;
-
     }
   }
 
   &__geograpy-text {
     margin-bottom: 24px;
+  }
+
+  &__map {
+    margin-bottom: 24px;
+
+    @media screen and (width <=768px) {
+      height: 260px;
+    }
+  }
+
+  &__slider-item-link {
+    padding: 24px;
+    background-color: #19a52b;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 295px;
+  }
+
+  &__slider-iten-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  &__slider-item-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
   }
 }

@@ -1,0 +1,42 @@
+.factory-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  height: 295px;
+
+  &__link {
+    display: block;
+    padding: 24px;
+    height: 100%;
+
+
+    @media (width <=990px) {
+      padding: 16px;
+    }
+  }
+
+  &__img {
+    max-height: 145px;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: #333;
+    margin-bottom: 24px;
+  }
+
+  &__adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__adress-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    color: rgba(51, 51, 51, 0.6);
+  }
+}
